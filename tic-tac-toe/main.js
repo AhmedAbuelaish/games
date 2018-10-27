@@ -55,7 +55,11 @@ function buildSquare (boxId, contents) {
   if (contents === null) {
     contents = ''
   }
-  return '<div class="square" id="box' + boxId + '">' + contents + '</div>'
+  let color = 'red'
+  if (contents == 'X') {
+    color='green'
+  }
+  return '<div class="square" id="box' + boxId + '" style="color:' + color + ';">' + contents + '</div>'
   // using data-... atribute allows you to create custom for e.g data-boxId = 5
 }
 
