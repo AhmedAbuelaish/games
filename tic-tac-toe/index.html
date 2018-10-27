@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+    .row {
+        display: flex;
+        flex: 1;
+    }
+    .square {
+        width: 150px;
+        height: 150px;
+        flex: 1;
+        border: 2px solid grey;
+        text-align: center;
+    }
+    .board {
+        width: 450px;
+        height: 450px;
+        margin: auto;
+    }
+    #container {
+        text-align:center;
+    }
+    </style>
     <title>Tic Tac Toe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    
 </head>
 <body>
-    <h1 class="text-center">Tic Tac Toe</h1>
-    <div id="content">
-        
-    </div>
-    <script src="main.js"></script>
+    <div id="container"></div>
+    <script src="tic-tac-toe.js"></script>
 </body>
 </html>
